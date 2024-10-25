@@ -1,0 +1,133 @@
+/* Background image setup */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('picking.jpeg') no-repeat center center/cover;
+    z-index: -1; /* Puts the image behind all the content */
+}
+
+/* Body content styling */
+body {
+    margin-top: 60px; /* Ensures content does not overlap with navbar */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Navbar styling */
+
+
+
+
+.navbar {
+    background-color: hwb(89 69% 13%);
+    position: fixed;
+    top: 0;
+    left: 0; /* Aligns the navbar to the left */
+    width: 100%; /* Full width */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(227, 116, 116, 0.1);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.logo {
+    margin-right: auto; /* Pushes the logo to the far left */
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(141, 125, 102);
+    padding-left: 100px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align to the left */
+    padding-left: 20px;
+}
+
+.navbar ul li {
+    padding: 21px 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(98, 130, 117);
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #576c4e;
+    color: #a5c9bc; /* Eco-friendly green theme */
+    border-radius: 5px;
+}
+
+/* Space below navbar to avoid overlap with content */
+body {
+    margin-top: 60px;
+}
+
+/* Services Section */
+.services.container {
+    padding: 100px 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.services .content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center; /* Centers the grid content */
+}
+
+/* Service Box Styling */
+.service-box {
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px; /* Optional: Limits width of service boxes */
+    margin: 0 auto; /* Ensures boxes are centered */
+}
+
+.service-box h4 {
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Uniform Service Image Styling */
+.service-image {
+    width: 100%;
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: hwb(89 69% 13%);
+    color: white;
+    position: relative;
+}

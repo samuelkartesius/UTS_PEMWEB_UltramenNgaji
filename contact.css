@@ -1,0 +1,121 @@
+/* Global body styling */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the body and html take the full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Flexbox to arrange the content vertically */
+}
+
+/* Body content should take the remaining space, pushing the footer down */
+.contact.container {
+    flex: 1; /* This allows the content to take up the remaining space */
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Content wrapper styling */
+.content-wrapper {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Navbar styling */
+
+
+
+
+.navbar {
+    background-color: hwb(89 69% 13%);
+    position: fixed;
+    top: 0;
+    left: 0; /* Aligns the navbar to the left */
+    width: 100%; /* Full width */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(227, 116, 116, 0.1);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.logo {
+    margin-right: auto; /* Pushes the logo to the far left */
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(141, 125, 102);
+    padding-left: 100px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align to the left */
+    padding-left: 20px;
+}
+
+.navbar ul li {
+    padding: 21px 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(98, 130, 117);
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #576c4e;
+    color: #a5c9bc; /* Eco-friendly green theme */
+    border-radius: 5px;
+}
+
+/* Space below navbar to avoid overlap with content */
+body {
+    margin-top: 60px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #00A86B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+form button:hover {
+    background-color: #007A54;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: hwb(89 69% 13%); /* Transparent background */
+    color: white;
+    width: 100%;
+    position: relative;
+    margin-top: auto; /* Ensures the footer stays at the bottom */
+}
